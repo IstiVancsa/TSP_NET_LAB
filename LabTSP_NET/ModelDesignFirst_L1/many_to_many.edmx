@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="many_to_many.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="many_to_manyStoreContainer">
+    <EntitySet Name="Albums" EntityType="many_to_many.Store.Albums" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Artists" EntityType="many_to_many.Store.Artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customers" EntityType="many_to_many.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="many_to_many.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="People" EntityType="many_to_many.Store.People" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlbumArtist" EntityType="many_to_many.Store.AlbumArtist" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AlbumArtist_Album" Association="many_to_many.Store.FK_AlbumArtist_Album">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="AlbumArtist" EntitySet="AlbumArtist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlbumArtist_Artist" Association="many_to_many.Store.FK_AlbumArtist_Artist">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="AlbumArtist" EntitySet="AlbumArtist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerOrder" Association="many_to_many.Store.FK_CustomerOrder">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Albums">
+    <Key>
+      <PropertyRef Name="AlbumId" />
+    </Key>
+    <Property Name="AlbumId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlbumName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Artists">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TotalValue" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="Customer_CustomerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="MiddleName" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="TelephoneNumber" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AlbumArtist">
+    <Key>
+      <PropertyRef Name="Albums_AlbumId" />
+      <PropertyRef Name="Artists_ArtistId" />
+    </Key>
+    <Property Name="Albums_AlbumId" Type="int" Nullable="false" />
+    <Property Name="Artists_ArtistId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CustomerOrder">
+    <End Role="Customer" Type="many_to_many.Store.Customers" Multiplicity="1" />
+    <End Role="Order" Type="many_to_many.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="Customer_CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlbumArtist_Album">
+    <End Role="Album" Type="many_to_many.Store.Albums" Multiplicity="1" />
+    <End Role="AlbumArtist" Type="many_to_many.Store.AlbumArtist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Album">
+        <PropertyRef Name="AlbumId" />
+      </Principal>
+      <Dependent Role="AlbumArtist">
+        <PropertyRef Name="Albums_AlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlbumArtist_Artist">
+    <End Role="AlbumArtist" Type="many_to_many.Store.AlbumArtist" Multiplicity="*" />
+    <End Role="Artist" Type="many_to_many.Store.Artists" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistId" />
+      </Principal>
+      <Dependent Role="AlbumArtist">
+        <PropertyRef Name="Artists_ArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="many_to_many" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="many_to_manyContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Albums" EntityType="many_to_many.Album" />
+          <EntitySet Name="Artists" EntityType="many_to_many.Artist" />
+          <AssociationSet Name="AlbumArtist" Association="many_to_many.AlbumArtist">
+            <End Role="Album" EntitySet="Albums" />
+            <End Role="Artist" EntitySet="Artists" />
+          </AssociationSet>
+          <EntitySet Name="Customers" EntityType="many_to_many.Customer" />
+          <EntitySet Name="Orders" EntityType="many_to_many.Order" />
+          <EntitySet Name="People" EntityType="many_to_many.Person" />
+          <AssociationSet Name="FK_CustomerOrder" Association="many_to_many.FK_CustomerOrder">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Album">
+          <Key>
+            <PropertyRef Name="AlbumId" />
+          </Key>
+          <Property Name="AlbumId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Artists" Relationship="many_to_many.AlbumArtist" FromRole="Album" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Albums" Relationship="many_to_many.AlbumArtist" FromRole="Artist" ToRole="Album" />
+        </EntityType>
+        <Association Name="AlbumArtist">
+          <End Type="many_to_many.Album" Role="Album" Multiplicity="*" />
+          <End Type="many_to_many.Artist" Role="Artist" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Orders" Relationship="many_to_many.FK_CustomerOrder" FromRole="Customer" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TotalValue" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Customer_CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Customer" Relationship="many_to_many.FK_CustomerOrder" FromRole="Order" ToRole="Customer" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TelephoneNumber" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_CustomerOrder">
+          <End Type="many_to_many.Customer" Role="Customer" Multiplicity="1" />
+          <End Type="many_to_many.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="Customer_CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="many_to_manyStoreContainer" CdmEntityContainer="many_to_manyContainer">
+    <EntitySetMapping Name="Albums">
+      <EntityTypeMapping TypeName="IsTypeOf(many_to_many.Album)">
+        <MappingFragment StoreEntitySet="Albums">
+          <ScalarProperty Name="AlbumId" ColumnName="AlbumId" />
+          <ScalarProperty Name="AlbumName" ColumnName="AlbumName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Artists">
+      <EntityTypeMapping TypeName="IsTypeOf(many_to_many.Artist)">
+        <MappingFragment StoreEntitySet="Artists">
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="IsTypeOf(many_to_many.Customer)">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(many_to_many.Order)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Customer_CustomerId" ColumnName="Customer_CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="IsTypeOf(many_to_many.Person)">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AlbumArtist" TypeName="many_to_many.AlbumArtist" StoreEntitySet="AlbumArtist">
+      <EndProperty Name="Album">
+        <ScalarProperty Name="AlbumId" ColumnName="Albums_AlbumId" />
+      </EndProperty>
+      <EndProperty Name="Artist">
+        <ScalarProperty Name="ArtistId" ColumnName="Artists_ArtistId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

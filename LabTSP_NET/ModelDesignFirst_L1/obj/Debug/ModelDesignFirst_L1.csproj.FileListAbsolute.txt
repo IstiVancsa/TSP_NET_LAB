@@ -1,0 +1,11 @@
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\ModelDesignFirst_L1.exe.config
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\ModelDesignFirst_L1.exe
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\ModelDesignFirst_L1.pdb
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\EntityFramework.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\EntityFramework.xml
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\obj\Debug\ModelDesignFirst_L1.csprojAssemblyReference.cache
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\obj\Debug\ModelDesignFirst_L1.csproj.CopyComplete
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\obj\Debug\ModelDesignFirst_L1.exe
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ModelDesignFirst_L1\obj\Debug\ModelDesignFirst_L1.pdb
