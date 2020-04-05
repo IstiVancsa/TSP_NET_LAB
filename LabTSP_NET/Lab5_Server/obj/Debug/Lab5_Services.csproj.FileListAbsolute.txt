@@ -1,0 +1,12 @@
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Server.dll.config
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Server.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Server.pdb
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Client.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\EntityFramework.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Client.pdb
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\Lab5_Client.dll.config
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\bin\Debug\EntityFramework.xml
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\obj\Debug\Lab5_Services.csprojAssemblyReference.cache
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\obj\Debug\Lab5_Services.csproj.CopyComplete
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\obj\Debug\Lab5_Server.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab5_Server\obj\Debug\Lab5_Server.pdb

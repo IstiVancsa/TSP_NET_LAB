@@ -1,0 +1,11 @@
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\CodeFirstEF.dll.config
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\CodeFirstEF.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\CodeFirstEF.pdb
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\EntityFramework.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\EntityFramework.xml
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\obj\Debug\CodeFirstEF.csprojAssemblyReference.cache
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\obj\Debug\CodeFirstEF.csproj.CopyComplete
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\obj\Debug\CodeFirstEF.dll
+D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\CodeFirstEF\obj\Debug\CodeFirstEF.pdb
