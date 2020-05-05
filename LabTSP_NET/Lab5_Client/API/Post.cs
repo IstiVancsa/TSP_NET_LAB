@@ -60,7 +60,8 @@ namespace Lab5_Client
         {
             using (ModelPostCommentContainer ctx = new ModelPostCommentContainer())
             {
-                return ctx.Posts.Include("Comments").ToList<Post>();
+                var posts = ctx.Posts.Include("Comments").ToList<Post>();
+                return posts;
                 // Obligatoriu de verificat in apelant rezultatul primit.
             }
         }

@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option csharp_namespace = "GRPCServer.Protos";
+
+service PostComment{
+    rpc AddComment (CommentEmptyModel) returns (CommentEmptyModel);
+    rpc AddPost (PostEmptyModel) returns (PostEmptyModel);
+    
+    rpc DeleteComment (CommentIdModel) returns (CommentEmptyModel);
+    rpc DeletePost (PostIdModel) returns (PostEmptyModel);
+
+    rpc GetCommentById (CommentIdModel) returns (CommentFullModel);
+    rpc GetPostById (PostIdModel) returns (PostFullModel);
+    
+    rpc GetComments (CommentEmptyModel) returns (stream CommentFullModel);
+    rpc GetPosts (PostEmptyModel) returns (stream PostFullModel);
+
+    rpc UpdateComment (CommentFullModel) returns (CommentEmptyModel);
+    rpc UpdatePost (PostFullModel) returns (PostEmptyModel);
+}
+
+message PostEmptyModel{
+
+}
+
+message PostIdModel{
+	int32 postId = 1;
+}
+
+message PostFullModel{
+	int32 PostId = 1;
+    string Description = 2;
+    string Domain = 3;
+    string Date = 4;
+    repeated CommentFullModel Comments = 5;
+}
+
+message CommentEmptyModel{
+
+}
+
+message CommentIdModel{
+    int32 commentId = 1;
+}
+
+message CommentFullModel{
+    int32 CommentId = 1;
+    int32 PostPostId = 2;
+    string Text = 3;
+}

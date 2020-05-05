@@ -55,5 +55,21 @@ namespace Lab5_Client
                 return items.Include(p => p.Post).SingleOrDefault();
             }
         }
+        public List<Comment> GetAllComments()
+        {
+            try
+            {
+                using (ModelPostCommentContainer ctx = new ModelPostCommentContainer())
+                {
+                    List<Comment> comments = ctx.Comments.ToList<Comment>();
+                    return comments;
+                    // Obligatoriu de verificat in apelant rezultatul primit.
+                }
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
     }
 }

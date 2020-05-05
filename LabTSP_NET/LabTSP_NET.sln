@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostWCF", "HostWCF\HostWCF.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWCF", "ClientWCF\ClientWCF.csproj", "{2FE1C18F-F77D-4C0A-8850-8A863FBA8C98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRPCServer", "GRPCServer\GRPCServer.csproj", "{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRPCClient", "GRPCClient\GRPCClient.csproj", "{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{2FE1C18F-F77D-4C0A-8850-8A863FBA8C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FE1C18F-F77D-4C0A-8850-8A863FBA8C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FE1C18F-F77D-4C0A-8850-8A863FBA8C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
