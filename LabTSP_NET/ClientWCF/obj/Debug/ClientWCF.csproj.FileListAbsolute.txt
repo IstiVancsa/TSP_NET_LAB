@@ -1,9 +1,4 @@
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\bin\Debug\ClientWCF.exe.config
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\bin\Debug\ClientWCF.exe
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\bin\Debug\ClientWCF.pdb
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.csprojAssemblyReference.cache
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.Form1.resources
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.Properties.Resources.resources
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.csproj.GenerateResource.cache
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.exe
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\ClientWCF\obj\Debug\ClientWCF.pdb

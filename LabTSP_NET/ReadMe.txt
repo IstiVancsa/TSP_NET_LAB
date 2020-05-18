@@ -1,0 +1,1 @@
+Lab cu razor pages web app nu functioneaza in totalitate deoarece in momentul adaugarii serviciului WCF modelele nu s-au generat corect

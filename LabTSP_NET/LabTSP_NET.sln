@@ -21,9 +21,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostWCF", "HostWCF\HostWCF.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWCF", "ClientWCF\ClientWCF.csproj", "{2FE1C18F-F77D-4C0A-8850-8A863FBA8C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRPCServer", "GRPCServer\GRPCServer.csproj", "{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCServer", "GRPCServer\GRPCServer.csproj", "{83F8642A-77B6-4AA1-80E3-2E1EDB21F0BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRPCClient", "GRPCClient\GRPCClient.csproj", "{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRPCClient", "GRPCClient\GRPCClient.csproj", "{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp_Vancsa_Istvan_Rp", "Lab_RazorPages\Asp_Vancsa_Istvan_Rp.csproj", "{A2CC411F-07C9-40DD-BFC6-31CEDDF59D34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA5E98AE-D646-44D4-A081-2DE66627BDF0}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +82,10 @@ Global
 		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFA1F888-6C5C-42BA-ADAE-9725A3F5DF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CC411F-07C9-40DD-BFC6-31CEDDF59D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CC411F-07C9-40DD-BFC6-31CEDDF59D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CC411F-07C9-40DD-BFC6-31CEDDF59D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CC411F-07C9-40DD-BFC6-31CEDDF59D34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

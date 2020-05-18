@@ -7,12 +7,3 @@ D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP.NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.Pr
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP.NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP.NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.exe
 D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP.NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.pdb
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\bin\Debug\Lab2.exe.config
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\bin\Debug\Lab2.exe
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\bin\Debug\Lab2.pdb
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.Form1.resources
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.Properties.Resources.resources
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.exe
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.pdb
-D:\Info\Anul3\Sem2\TSP_NET\GitProj\TSP_NET_LAB\LabTSP_NET\Lab2\obj\Debug\Lab2.csprojAssemblyReference.cache
